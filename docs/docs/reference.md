@@ -1,33 +1,24 @@
-# Reference 
 
-## General
-[Intro](subpages_en/01_Intro.md)  
-[Folder structure & Note Types](subpages_en/02_Folder_structure_note_types.md)  
-[Templates](subpages_en/03_Templates.md)   
-[Symbols](subpages_en/04_Symbols.md)
+# 帮助文档
+## 概述
+[Intro](subpages_cn/01_Intro.md)  
+[Folder structure](subpages_cn/02_Folder_structure.md)  
+[Templates](subpages_cn/03_Templates.md)   
 
-## Goals & projects
-[Goals & Projects](subpages_en/Goal01_General.md)
+## 目标和项目
+*Place holder*  
 
-## Projects Implementation
-[Projects_Implementation](subpages_en/Implement01_General.md)
+## 日志
+*Place holder*  
 
-## Journal
-[Journal](subpages_en/Journal01_General.md)
+## 知识管理
+[Note types](subpages_cn/PKM01_Note_types.md)   Coming soon  
+[Literature note](subpages_cn/PKM03_Literature_note.md) Coming soon  
+[Atomic note](subpages_cn/PKM04_Atomic_note.md) Coming soon  
+[Evergreen note](subpages_cn/PKM005_Evergreen_note.md) Coming soon  
+[Topic](subpages_cn/PKM006_Topic.md) Coming soon  
 
-## Knowledge Management  
-[Knowledge Management](subpages_en/PKM01_General.md)      
-[Literature note](subpages_en/PKM03_Literature_note.md)    
-[Atomic note](subpages_en/PKM04_Atomic_note.md)    
-[Evergreen note](subpages_en/PKM005_Evergreen_note.md)    
-[Topic](subpages_en/PKM006_Topic.md)    
-[Put it together](subpages_en/PKM010_Put_it_together.md)    
 
-## Communication with Outside World
-[Communication with outside world](subpages_en/Outside01_General.md)
 
-## Plans & Reviews 
-[Plans & Reviews](subpages_en/Review01_General.md)
-
-## Hotkeys
-[Hotkeys](subpages_en/05_Hotkeys.md)
+## 计划和回顾
+*Place holder*  

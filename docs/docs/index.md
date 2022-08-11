@@ -1,15 +1,12 @@
-# Intro
-LMS (Life Management System) is a personal knowledge management system and goal & project management system based on Obsidian.md. 
+# 简介
 
-The LMS is a complex interactive system. To make it easy to understand, I consider the LMS as a medieval town.  This town has 6 main districts. For more explanation about LMS as a medieval town see:
-
-[LMS as a medieval town](subpages_en/01_LMS_as_a_medieval_town.md)
-
-![LMS_poster_landscape](subpages_en/images/LMS_poster_landscape.png)
+LMS（Life Management System）是基于Obsidian.md的个人知识管理系统和目标&项目管理系统。
 
 
+![LMS_poster_landscape](subpages/images/LMS_poster_landscape.png)
 
-## Credit
+
+## 感谢
 - [Obsidian.md](https://obsidian.md/)
 - Progressive summarization from [Forte Labs](https://fortelabs.co/)
 - Zettelkasten from Niklas Luhmann
@@ -18,28 +15,25 @@ The LMS is a complex interactive system. To make it easy to understand, I consid
 - [tot0/ObsidianPPV: PPV implementation for Obsidian](https://github.com/tot0/ObsidianPPV)
 - [Blue-Topaz_Obsidian-css: A blue theme for Obsidian. ](https://github.com/whyt-byte/Blue-Topaz_Obsidian-css)
 
-### Plugins (integrated)
-- [valentine195/obsidian-admonition: Adds admonition block-styled content to Obsidian.md (github.com)](https://github.com/valentine195/obsidian-admonition)
-- [aidenlx/alx-folder-note: Add description, summary, and more info to folders with folder notes. (github.com)](https://github.com/aidenlx/alx-folder-note)
-- [shabegom/buttons: Buttons in Obsidian (github.com)](https://github.com/shabegom/buttons)
-- [liamcain/obsidian-calendar-plugin: Simple calendar widget for Obsidian. (github.com)](https://github.com/liamcain/obsidian-calendar-plugin)
-- [tth05/obsidian-completr: Auto-completion plugin for the obsidian editor. (github.com)](https://github.com/tth05/obsidian-completr)
-- [Johnson0907/obsidian-daily-notes-viewer (github.com)](https://github.com/Johnson0907/obsidian-daily-notes-viewer)
-- [blacksmithgu/obsidian-dataview: A high-performance data index and query language over Markdown files, for https://obsidian.md/. (github.com)](https://github.com/blacksmithgu/obsidian-dataview)
-- [dvcrn/obsidian-filename-heading-sync: Obisdian.md plugin to keep the filename and the first header of the file in sync (github.com)](https://github.com/dvcrn/obsidian-filename-heading-sync)
-- [aidenlx/folder-note-core: Provide core features and API for folder notes in obsidian (github.com)](https://github.com/aidenlx/folder-note-core)
-- [chhoumann/MetaEdit: MetaEdit for Obsidian (github.com)](https://github.com/chhoumann/MetaEdit)
-- [Razumihin/obsidian-fullscreen-plugin (github.com)](https://github.com/razumihin/obsidian-fullscreen-plugin)
-- [liamcain/obsidian-periodic-notes: Create/manage your daily, weekly, and monthly notes in Obsidian (github.com)](https://github.com/liamcain/obsidian-periodic-notes)
-- [tnichols217/obsidian-columns (github.com)](https://github.com/tnichols217/obsidian-columns)
-- [obsidian-tasks-group/obsidian-tasks: Task management for the Obsidian knowledge base. (github.com)](https://github.com/obsidian-tasks-group/obsidian-tasks)
-- [vslinko/obsidian-outliner: Work with your lists like in Workflowy or RoamResearch (github.com)](https://github.com/vslinko/obsidian-outliner)
-- [chhoumann/quickadd: QuickAdd for Obsidian (github.com)](https://github.com/chhoumann/quickadd)
-- [tgrosinger/recent-files-obsidian: Display a list of most recently opened files (github.com)](https://github.com/tgrosinger/recent-files-obsidian)
-- [mdelobelle/obsidian_supercharged_links: obsidian plugin to add attributes and context menu options to internal links (github.com)](https://github.com/mdelobelle/obsidian_supercharged_links)
-- [SilentVoid13/Templater: A template plugin for obsidian (github.com)](https://github.com/SilentVoid13/Templater)
-- [ryjjin/Obsidian-shortcuts-extender: Plugin for Obsidian: Use shortcuts for input special symbols and changing level of headings without language switching](https://github.com/ryjjin/Obsidian-shortcuts-extender)
+### 插件 (已整合)
+- [Admonition: Adds admonition block-styled content to Obsidian.md ](https://github.com/valentine195/obsidian-admonition)
+- [Alx-folder-note: Add description, summary, and more info to folders with folder notes. (github.com)](https://github.com/aidenlx/alx-folder-note)
+- [Buttons: Buttons in Obsidian ](https://github.com/shabegom/buttons)
+- [Calendar: Simple calendar widget for Obsidian. ](https://github.com/liamcain/obsidian-calendar-plugin)
+- [Completr: Auto-completion plugin for the obsidian editor. ](https://github.com/tth05/obsidian-completr)
+- [Daily-notes-viewer ](https://github.com/Johnson0907/obsidian-daily-notes-viewer)
+- [Dataview: A high-performance data index and query language over Markdown files, for https://obsidian.md/. ](https://github.com/blacksmithgu/obsidian-dataview)
+- [Filename heading sync: Obsidian.md plugin to keep the filename and the first header of the file in sync ](https://github.com/dvcrn/obsidian-filename-heading-sync)
+- [Folder-note-core: Provide core features and API for folder notes in obsidian](https://github.com/aidenlx/folder-note-core)
+- [MetaEdit: MetaEdit for Obsidian ](https://github.com/chhoumann/MetaEdit)
+- [Periodic-notes: Create/manage your daily, weekly, and monthly notes in Obsidian ](https://github.com/liamcain/obsidian-periodic-notes)
+- [Obsidian-columns](https://github.com/tnichols217/obsidian-columns)
+- [Obsidian-tasks: Task management for the Obsidian knowledge base. ](https://github.com/obsidian-tasks-group/obsidian-tasks)
+- [Outliner: Work with your lists like in Workflowy or RoamResearch](https://github.com/vslinko/obsidian-outliner)
+- [Supercharged links: obsidian plugin to add attributes and context menu options to internal links ](https://github.com/mdelobelle/obsidian_supercharged_links)
+- [Templater: A template plugin for obsidian ](https://github.com/SilentVoid13/Templater)
 
-### Plugins (Optional)
-- [pjeby/tag-wrangler: Rename, merge, toggle, and search tags from the Obsidian tag pane (github.com)](https://github.com/pjeby/tag-wrangler)
-- [ryjjin/Obsidian-shortcuts-extender: Plugin for Obsidian: Use shortcuts for input special symbols and changing level of headings without language switching (github.com)](https://github.com/ryjjin/Obsidian-shortcuts-extender)
+
+### 其他推荐插件 
+- [Excalidraw plugin: A plugin to edit and view Excalidraw drawings in Obsidian ](https://github.com/zsviczian/obsidian-excalidraw-plugin)
+- [Tag-wrangler: Rename, merge, toggle, and search tags from the Obsidian tag pane ](https://github.com/pjeby/tag-wrangler)
