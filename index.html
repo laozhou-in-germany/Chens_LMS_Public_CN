@@ -33,17 +33,54 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">简介</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">快速开始 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="qs01_ui/" class="dropdown-item">用户界面</a>
+</li>
+                                    
+<li>
+    <a href="qs11_use_goal_management/" class="dropdown-item">使用目标管理</a>
+</li>
+                                    
+<li>
+    <a href="qs12_use_journal/" class="dropdown-item">使用日志</a>
+</li>
+                                    
+<li>
+    <a href="qs13_use_knowledge_management/" class="dropdown-item">使用知识管理</a>
+</li>
+                                    
+<li>
+    <a href="qs14_use_periodic_review/" class="dropdown-item">使用定期回顾</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">展示案例 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="sc_goal_management/" class="dropdown-item">目标管理</a>
+</li>
+                                    
+<li>
+    <a href="sc_journal/" class="dropdown-item">日志</a>
+</li>
+                                    
+<li>
+    <a href="sc_knowledge_management/" class="dropdown-item">知识管理</a>
+</li>
+                                    
+<li>
+    <a href="sc_periodic_review/" class="dropdown-item">定期回顾</a>
+</li>
+                                </ul>
                             </li>
                             <li class="navitem">
-                                <a href="quick_start/" class="nav-link">快速开始</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="showcase/" class="nav-link">示例展示</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="reference/" class="nav-link">帮助文档</a>
+                                <a href="ref0_general/" class="nav-link">帮助手册</a>
                             </li>
                             <li class="navitem">
                                 <a href="about/" class="nav-link">关于</a>
@@ -59,16 +96,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="quick_start/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                             <li class="nav-item">
                                 <a href="https://github.com/laozhou-in-germany/Chens_LMS_Public_CN/blob/main/docs/docs/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
@@ -90,8 +117,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">简介</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">介绍</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#github" class="nav-link">Github</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">感谢</a>
               <ul class="nav flex-column">
               </ul>
@@ -103,10 +134,30 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">简介</h1>
-<p>LMS（Life Management System）是基于Obsidian.md的个人知识管理系统和目标&amp;项目管理系统。</p>
-<p><img alt="LMS_poster_landscape" src="subpages/images/LMS_poster_landscape.png" /></p>
+<h1 id="_1">介绍</h1>
+<p><em>Intro</em></p>
+<p>LMS（Life Management System）是一款基于Obsidian.md的个人知识管理和目标管理的免费工具。</p>
+<p>它由4个部分组成:<br />
+- <a href="qs11_use_goal_management/">目标管理</a>：将项目和成果与个人愿景保持一致，对重要的高层活动保持概览。<br />
+- <a href="qs12_use_journal/">日记</a>：记录个人感受、思考和做事，创造自我认识，更了解自己。<br />
+- <a href="qs13_use_knowledge_management/">知识管理</a>：记住重要信息，产生自己的思想（批判性思维），并获得相关知识以实现人生目标。<br />
+- <a href="qs14_use_periodic_review/">定期回顾</a>：保持以上部分运行、审查、反映和改进系统。  </p>
+<p>这4个部分相互影响。我将它们与中世纪城镇中的区域进行比较。这个镇有6个主要区域：<br />
+- 造梦者城堡（目标管理）<br />
+- 我的故事之家（日记）<br />
+- 知识之塔（知识管理）<br />
+- 回顾之塔（定期回顾）<br />
+- 实践广场（项目实施）<br />
+- 知识之河（外部世界）<br />
+各区的用途如下图所示。  </p>
+<p><img alt="image-20220815232044684" src="images/image-20220815232044684.png" />
+更多见<a href="ref10_lms_as_a_medieval_town/">LMS 作为中世纪小镇</a></p>
+<p>我希望 LMS 为你提供从一个开箱即用的 Obsidian.md 模板库，并启发你创建自己的工作流程，进而管理目标、撰写日志和管理知识。</p>
+<h2 id="github">Github</h2>
+<p><em>Github</em></p>
+<p>LMS 托管在 GitHub 上：<a href="https://github.com/laozhou-in-germany/Chens_LMS_Public">laozhou-in-germany/Chens_LMS_Public</a></p>
 <h2 id="_2">感谢</h2>
+<p><em>Credit</em></p>
 <ul>
 <li><a href="https://obsidian.md/">Obsidian.md</a></li>
 <li>Progressive summarization from <a href="https://fortelabs.co/">Forte Labs</a></li>
@@ -118,27 +169,31 @@
 </ul>
 <h3 id="_3">插件 (已整合)</h3>
 <ul>
-<li><a href="https://github.com/valentine195/obsidian-admonition">Admonition: Adds admonition block-styled content to Obsidian.md </a></li>
-<li><a href="https://github.com/aidenlx/alx-folder-note">Alx-folder-note: Add description, summary, and more info to folders with folder notes. (github.com)</a></li>
-<li><a href="https://github.com/shabegom/buttons">Buttons: Buttons in Obsidian </a></li>
-<li><a href="https://github.com/liamcain/obsidian-calendar-plugin">Calendar: Simple calendar widget for Obsidian. </a></li>
-<li><a href="https://github.com/tth05/obsidian-completr">Completr: Auto-completion plugin for the obsidian editor. </a></li>
-<li><a href="https://github.com/Johnson0907/obsidian-daily-notes-viewer">Daily-notes-viewer </a></li>
-<li><a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview: A high-performance data index and query language over Markdown files, for https://obsidian.md/. </a></li>
-<li><a href="https://github.com/dvcrn/obsidian-filename-heading-sync">Filename heading sync: Obsidian.md plugin to keep the filename and the first header of the file in sync </a></li>
-<li><a href="https://github.com/aidenlx/folder-note-core">Folder-note-core: Provide core features and API for folder notes in obsidian</a></li>
-<li><a href="https://github.com/chhoumann/MetaEdit">MetaEdit: MetaEdit for Obsidian </a></li>
-<li><a href="https://github.com/liamcain/obsidian-periodic-notes">Periodic-notes: Create/manage your daily, weekly, and monthly notes in Obsidian </a></li>
-<li><a href="https://github.com/tnichols217/obsidian-columns">Obsidian-columns</a></li>
-<li><a href="https://github.com/obsidian-tasks-group/obsidian-tasks">Obsidian-tasks: Task management for the Obsidian knowledge base. </a></li>
-<li><a href="https://github.com/vslinko/obsidian-outliner">Outliner: Work with your lists like in Workflowy or RoamResearch</a></li>
-<li><a href="https://github.com/mdelobelle/obsidian_supercharged_links">Supercharged links: obsidian plugin to add attributes and context menu options to internal links </a></li>
-<li><a href="https://github.com/SilentVoid13/Templater">Templater: A template plugin for obsidian </a></li>
+<li><a href="https://github.com/valentine195/obsidian-admonition">valentine195/obsidian-admonition: Adds admonition block-styled content to Obsidian.md (github.com)</a></li>
+<li><a href="https://github.com/aidenlx/alx-folder-note">aidenlx/alx-folder-note: Add description, summary, and more info to folders with folder notes. (github.com)</a></li>
+<li><a href="https://github.com/shabegom/buttons">shabegom/buttons: Buttons in Obsidian (github.com)</a></li>
+<li><a href="https://github.com/liamcain/obsidian-calendar-plugin">liamcain/obsidian-calendar-plugin: Simple calendar widget for Obsidian. (github.com)</a></li>
+<li><a href="https://github.com/tth05/obsidian-completr">tth05/obsidian-completr: Auto-completion plugin for the obsidian editor. (github.com)</a></li>
+<li><a href="https://github.com/Johnson0907/obsidian-daily-notes-viewer">Johnson0907/obsidian-daily-notes-viewer (github.com)</a></li>
+<li><a href="https://github.com/blacksmithgu/obsidian-dataview">blacksmithgu/obsidian-dataview: A high-performance data index and query language over Markdown files, for https://obsidian.md/. (github.com)</a></li>
+<li><a href="https://github.com/dvcrn/obsidian-filename-heading-sync">dvcrn/obsidian-filename-heading-sync: Obisdian.md plugin to keep the filename and the first header of the file in sync (github.com)</a></li>
+<li><a href="https://github.com/aidenlx/folder-note-core">aidenlx/folder-note-core: Provide core features and API for folder notes in obsidian (github.com)</a></li>
+<li><a href="https://github.com/chhoumann/MetaEdit">chhoumann/MetaEdit: MetaEdit for Obsidian (github.com)</a></li>
+<li><a href="https://github.com/razumihin/obsidian-fullscreen-plugin">Razumihin/obsidian-fullscreen-plugin (github.com)</a></li>
+<li><a href="https://github.com/liamcain/obsidian-periodic-notes">liamcain/obsidian-periodic-notes: Create/manage your daily, weekly, and monthly notes in Obsidian (github.com)</a></li>
+<li><a href="https://github.com/tnichols217/obsidian-columns">tnichols217/obsidian-columns (github.com)</a></li>
+<li><a href="https://github.com/obsidian-tasks-group/obsidian-tasks">obsidian-tasks-group/obsidian-tasks: Task management for the Obsidian knowledge base. (github.com)</a></li>
+<li><a href="https://github.com/vslinko/obsidian-outliner">vslinko/obsidian-outliner: Work with your lists like in Workflowy or RoamResearch (github.com)</a></li>
+<li><a href="https://github.com/chhoumann/quickadd">chhoumann/quickadd: QuickAdd for Obsidian (github.com)</a></li>
+<li><a href="https://github.com/tgrosinger/recent-files-obsidian">tgrosinger/recent-files-obsidian: Display a list of most recently opened files (github.com)</a></li>
+<li><a href="https://github.com/mdelobelle/obsidian_supercharged_links">mdelobelle/obsidian_supercharged_links: obsidian plugin to add attributes and context menu options to internal links (github.com)</a></li>
+<li><a href="https://github.com/SilentVoid13/Templater">SilentVoid13/Templater: A template plugin for obsidian (github.com)</a></li>
+<li><a href="https://github.com/ryjjin/Obsidian-shortcuts-extender">ryjjin/Obsidian-shortcuts-extender: Plugin for Obsidian: Use shortcuts for input special symbols and changing level of headings without language switching</a></li>
 </ul>
-<h3 id="_4">其他推荐插件</h3>
+<h3 id="_4">插件 (备选)</h3>
 <ul>
-<li><a href="https://github.com/zsviczian/obsidian-excalidraw-plugin">Excalidraw plugin: A plugin to edit and view Excalidraw drawings in Obsidian </a></li>
-<li><a href="https://github.com/pjeby/tag-wrangler">Tag-wrangler: Rename, merge, toggle, and search tags from the Obsidian tag pane </a></li>
+<li><a href="https://github.com/pjeby/tag-wrangler">pjeby/tag-wrangler: Rename, merge, toggle, and search tags from the Obsidian tag pane (github.com)</a></li>
+<li><a href="https://github.com/ryjjin/Obsidian-shortcuts-extender">ryjjin/Obsidian-shortcuts-extender: Plugin for Obsidian: Use shortcuts for input special symbols and changing level of headings without language switching (github.com)</a></li>
 </ul></div>
             </div>
         </div>
@@ -220,5 +275,5 @@
 
 <!--
 MkDocs version : 1.3.1
-Build Date UTC : 2022-08-11 05:34:04.288239+00:00
+Build Date UTC : 2022-08-21 21:39:09.941444+00:00
 -->

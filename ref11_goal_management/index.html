@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>目标管理 - Chen's LMS</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Chen's LMS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">快速开始 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../qs01_ui/" class="dropdown-item">用户界面</a>
+</li>
+                                    
+<li>
+    <a href="../qs11_use_goal_management/" class="dropdown-item">使用目标管理</a>
+</li>
+                                    
+<li>
+    <a href="../qs12_use_journal/" class="dropdown-item">使用日志</a>
+</li>
+                                    
+<li>
+    <a href="../qs13_use_knowledge_management/" class="dropdown-item">使用知识管理</a>
+</li>
+                                    
+<li>
+    <a href="../qs14_use_periodic_review/" class="dropdown-item">使用定期回顾</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">展示案例 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../sc_goal_management/" class="dropdown-item">目标管理</a>
+</li>
+                                    
+<li>
+    <a href="../sc_journal/" class="dropdown-item">日志</a>
+</li>
+                                    
+<li>
+    <a href="../sc_knowledge_management/" class="dropdown-item">知识管理</a>
+</li>
+                                    
+<li>
+    <a href="../sc_periodic_review/" class="dropdown-item">定期回顾</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../ref0_general/" class="nav-link">帮助手册</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../about/" class="nav-link">关于</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../en_cn/" class="nav-link">English</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/laozhou-in-germany/Chens_LMS_Public_CN/blob/main/docs/docs/ref11_goal_management.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">目标管理</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">目的</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">笔记类型</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">工作流程</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">支柱笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">价值目标笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_7" class="nav-link">结果笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_8" class="nav-link">项目笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_9" class="nav-link">视频项目笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_10" class="nav-link">习惯笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_11" class="nav-link">心态笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">目标管理</h1>
+<p><em>Goal Management</em></p>
+<h2 id="_2">目的</h2>
+<p><em>Purpose</em></p>
+<p><strong>目标管理</strong>部分旨在</p>
+<ul>
+<li>使项目和成果与个人愿景保持一致，</li>
+<li>对重要的高层活动总揽全局。</li>
+</ul>
+<h2 id="_3">笔记类型</h2>
+<p><em>Note types</em></p>
+<p>此目标管理使用 7 种笔记类型。</p>
+<ol>
+<li><strong>🏛支柱(Pillar)</strong>：重要的生活领域，例如财务、健康、家庭。</li>
+<li><strong>🌟价值目标(Value Goal)</strong>：生活领域（支柱）的目标或愿景，通常不是具体的，不是量化的，而是对我们梦想的清晰陈述。例如“我想拥有健康的生活方式”。</li>
+<li><strong>🎯结果(Outcome)</strong>：实现价值目标的量化可交付成果。它们必须是量化的、有时间期限的和可操作的。例如“今年去游泳10次”。确保结果真正有助于实现价值目标。</li>
+<li><strong>💎项目(Project)</strong>：一系列行动，用于达成结果中的里程碑。</li>
+<li><strong>📽视频项目(Video project)</strong>：与项目类似，但针对创建视频进行了优化。</li>
+<li><strong>🔁习惯(Routine)</strong>：重复的活动，以达到一定的价值目标。</li>
+<li><strong>🤯心态(Mindset)</strong>：实现某个价值目标所需的心态。</li>
+</ol>
+<h2 id="_4">工作流程</h2>
+<p><img alt="image-20220816214720045" src="../images/image-20220816214720045.png" /></p>
+<ol>
+<li>根据自我认识，定义<strong>支柱</strong>和<strong>价值目标</strong>  </li>
+<li>为价值目标推导出作为可交付<strong>结果</strong>  </li>
+<li>安排<strong>项目</strong>以实现成果  </li>
+<li>为价值目标确定所需的<strong>习惯</strong>和<strong>心态</strong>。  </li>
+</ol>
+<p>输入：自我认识。<br />
+输出：项目、习惯和心态。  </p>
+<h2 id="_5">支柱笔记</h2>
+<p>Pillar note</p>
+<h3 id="yaml-front-matter">Yaml front matter</h3>
+<p>支柱笔记中的yaml front matter具有以下标准属性。</p>
+<pre><code class="language-yaml">---
+fileClass: pillar  
+sorting-index: 100
+category-pillar: 🟢live  
+status-set2: 🟢active 
+date: 2022-04-23  
+---
+</code></pre>
+<p><code>fileClass</code>: 笔记类型, 固定为 <code>pillar</code>  <br />
+<code>sorting-index</code>:在仪表板的dataview中，用于对支柱笔记进行排序。<br />
+请使用以下惯例来设置排序索引。 </p>
+<ul>
+<li>🟢live:  1xx  </li>
+<li>🟠love: 2xx  </li>
+<li>🔵learn: 3xx  </li>
+<li>🟡legacy: 4xx   </li>
+</ul>
+<p><code>category-pillar</code>: 支柱的类别，可能的类别  [🟢live,🟠love,🔵learn,🟡legacy]<br />
+<code>status-set2</code>: 笔记的状态，可能的状态 [🟢active,⏸on-hold,✨future,✅archived]<br />
+<code>date</code>: 笔记的创建日期，自动创建</p>
+<h3 id="value-goals">value goals章节</h3>
+<p>一个dataview代码块，用于显示属于当前支柱的所有价值目标。</p>
+<p><img alt="image-20220816220602612" src="../images/image-20220816220602612.png" /></p>
+<h2 id="_6">价值目标笔记</h2>
+<p><em>Value goal note</em></p>
+<h3 id="yalm-front-matter">Yalm front matter</h3>
+<p>价值目标笔记中的yaml front matter具有以下标准属性。</p>
+<pre><code class="language-yaml">---
+fileClass: value-goal  
+status: 🟢active
+date: 2022-08-12  
+---
+</code></pre>
+<p><code>fileClass</code>: 笔记类型, 固定为 <code>value-goal</code>  <br />
+<code>status</code>: 笔记的状态，可能的状态 [🟢active,⏸on-hold,🔜next-up,✨future,✅completed,🗑️abandon]  <br />
+<code>date</code>: 笔记的创建日期，自动创建   </p>
+<h3 id="inline-field">Inline Field 章节</h3>
+<p><code>Pillar::</code>  当前价值目标的父支柱笔记
+<code>Years::</code> 当前价值目标的年份</p>
+<h3 id="how">How 章节</h3>
+<p>一段dataview代码块，用于显示属于当前价值目标的所有结果。 结果笔记中的任务显示为进度条。</p>
+<p><img alt="image-20220816222302826" src="../images/image-20220816222302826.png" /></p>
+<h3 id="supporting">Supporting 章节</h3>
+<p>两个dataview代码块，用于显示支持当前价值目标的所有习惯和心态。</p>
+<p><img alt="image-20220816222719913" src="../images/image-20220816222719913.png" /></p>
+<h3 id="knowledge">Knowledge 章节</h3>
+<p>一个dataview代码块，用于显示所有支持当前的价值目标的主题笔记（知识）。</p>
+<h2 id="_7">结果笔记</h2>
+<p><em>Outcome note</em></p>
+<h3 id="yalm-front-matter_1">Yalm front matter</h3>
+<p>结果笔记中的yaml front matter具有以下标准属性。</p>
+<pre><code class="language-yaml">---
+fileClass: outcome  
+status: 🟢active
+date: 2022-08-12  
+total: 6
+completed: 2
+---
+</code></pre>
+<p><code>fileClass</code>: 笔记类型, 固定为 <code>outcome</code><br />
+<code>status</code>: 笔记的状态，可能的状态 [🟢active,⏸on-hold,🔜next-up,✨future,✅completed,🗑️abandon]<br />
+<code>date</code>: 笔记的创建日期，自动创建<br />
+<code>total</code>: 笔记中的总任务数，由插件<strong>MetaEdit</strong>自动更新  <br />
+<code>completed</code>: 笔记中的已完成任务数，由插件<strong>MetaEdit</strong>自动更新    </p>
+<h3 id="inline-field_1">Inline Field 章节</h3>
+<p><code>Value Goal::</code>  当前结果笔记的父价值目标
+<code>Quarters::</code> 当前结果笔记的季度</p>
+<h3 id="how_1">How 章节</h3>
+<p>dataview代码块, 用于显示属于当前结果笔记的所有项目。</p>
+<h2 id="_8">项目笔记</h2>
+<p><em>Project note</em></p>
+<h3 id="yalm-front-matter_2">Yalm front matter</h3>
+<p>项目笔记中的yaml front matter具有以下标准属性。</p>
+<pre><code class="language-yaml">---
+fileClass: project  
+status: 🟢active
+date: 2022-08-12  
+total: 1
+completed: 0
+---
+</code></pre>
+<p><code>fileClass</code>: 笔记类型, 固定为 <code>project</code><br />
+<code>status</code>: 笔记的状态，可能的状态 [🟢active,⏸on-hold,🔜next-up,✨future,✅completed,🗑️abandon]<br />
+<code>date</code>: 笔记的创建日期，自动创建<br />
+<code>total</code>: 笔记中的总任务数，由插件<strong>MetaEdit</strong>自动更新  <br />
+<code>completed</code>: 笔记中的已完成任务数，由插件<strong>MetaEdit</strong>自动更新    </p>
+<h3 id="inline-field_2">Inline Field 章节</h3>
+<p><code>Outcome::</code>  当前项目笔记的父结果
+<code>Months::</code> 当前项目笔记的月份 </p>
+<h2 id="_9">视频项目笔记</h2>
+<p>Video project note</p>
+<p>与项目笔记类似。</p>
+<h2 id="_10">习惯笔记</h2>
+<p>与结果笔记类似。</p>
+<h2 id="_11">心态笔记</h2>
+<p>与结果笔记类似。</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

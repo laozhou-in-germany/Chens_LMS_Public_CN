@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>知识管理 - Chen's LMS</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Chen's LMS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">快速开始 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../qs01_ui/" class="dropdown-item">用户界面</a>
+</li>
+                                    
+<li>
+    <a href="../qs11_use_goal_management/" class="dropdown-item">使用目标管理</a>
+</li>
+                                    
+<li>
+    <a href="../qs12_use_journal/" class="dropdown-item">使用日志</a>
+</li>
+                                    
+<li>
+    <a href="../qs13_use_knowledge_management/" class="dropdown-item">使用知识管理</a>
+</li>
+                                    
+<li>
+    <a href="../qs14_use_periodic_review/" class="dropdown-item">使用定期回顾</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">展示案例 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../sc_goal_management/" class="dropdown-item">目标管理</a>
+</li>
+                                    
+<li>
+    <a href="../sc_journal/" class="dropdown-item">日志</a>
+</li>
+                                    
+<li>
+    <a href="../sc_knowledge_management/" class="dropdown-item">知识管理</a>
+</li>
+                                    
+<li>
+    <a href="../sc_periodic_review/" class="dropdown-item">定期回顾</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../ref0_general/" class="nav-link">帮助手册</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../about/" class="nav-link">关于</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../en_cn/" class="nav-link">English</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/laozhou-in-germany/Chens_LMS_Public_CN/blob/main/docs/docs/ref13_knowledge_management.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">知识管理</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">目的</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">笔记类型</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">工作流程</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">文献笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_11" class="nav-link">原子笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_16" class="nav-link">常青笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_20" class="nav-link">主题笔记</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">知识管理</h1>
+<p><em>Knowledge Management</em></p>
+<h2 id="_2">目的</h2>
+<p><em>Purpose</em></p>
+<p><strong>知识管理</strong>部分旨在</p>
+<ul>
+<li>记住重要信息，</li>
+<li>产生我自己的想法（批判性思维），</li>
+<li>获取相关知识以实现人生目标。</li>
+</ul>
+<h2 id="_3">笔记类型</h2>
+<p><em>Note types</em></p>
+<p>知识管理有 4 种笔记类型：</p>
+<ol>
+<li><strong>📔文献笔记(Literature note)</strong>：外部信息的记录，例如书籍、文章、推文和视频。它通常是事实、观点、故事等信息的混合体。</li>
+<li><strong>⚛️原子笔记(Atomic note)</strong>：一小段可重复使用的外部信息，例如，一个故事，一句格言。它们是从文献笔记中提取的，可以在我的文章里面引用。</li>
+<li><strong>🌲常青笔记(Evergreen note)</strong>：我的见解。它的成熟度随着我的新知识和经验而增长。它是关于某个主题的一条观点。</li>
+<li><strong>🗩主题笔记(Topic note)</strong>：文献笔记、原子笔记和常青笔记的集合。随着笔记数量的增加，主题的成熟度也随之提高。</li>
+</ol>
+<h2 id="_4">工作流程</h2>
+<p><img alt="image-20220814170842160" src="../images/image-20220814170842160.png" /></p>
+<p>4 种笔记类型相互关联：</p>
+<ul>
+<li><strong>文献笔记</strong>是外部信息的记录，应提炼为其他笔记类型。</li>
+<li><strong>原子笔记</strong>摘自文献笔记，并与常青笔记相关联。</li>
+<li><strong>常青笔记</strong> 由文献笔记生成。</li>
+<li><strong>主题笔记</strong>是其他三种笔记类型的合并结果，他还包含了子主题笔记。所有顶级主题笔记都连接到主节点(Home Node)。</li>
+</ul>
+<p>输入：来自外部的知识、自己的经验和洞察力
+输出：智慧，在现实世界中正确有效的知识</p>
+<h2 id="_5">文献笔记</h2>
+<p><em>Literature note</em></p>
+<h3 id="yalm-front-matter">Yalm front matter</h3>
+<p><em>Yalm front matter</em> </p>
+<p>文献笔记的 yaml front matter 中具有以下标准属性。</p>
+<pre><code class="language-yaml">---
+author: Wikipedia 
+excerpt: Berlin is the captical of Germany
+fileClass: literature-note  
+score: xxxx 
+category-literature-note: article  
+reviewed: xx  
+cover: https://dummy.org/dummy.jpg 
+date: 2022-01-13  
+last-review: 2022-01-13  
+---
+</code></pre>
+<p><code>author</code>：文献作者，可选<br />
+<code>excerpt</code>：笔记的摘录，可选<br />
+<code>fileClass</code>：笔记类型，总是<code>literature-note</code><br />
+<code>score</code>：笔记分数，可能的值：x,...,xxxxx，<strong>间隔重复</strong>使用该属性<br />
+<code>category-literature-note</code>：文献笔记的类别，可选<br />
+<code>reviewed</code>: 复习次数，可能的值：x,...,xxxxx，<strong>间隔重复</strong>使用该属性<br />
+<code>cover</code>：图片的https作为封面，可选，可用于使用dataview显示文献的封面。<br />
+<code>date</code>：笔记的创建日期，自动创建<br />
+<code>last-review</code>：最后一次回顾的日期，<strong>间隔重复</strong>使用该属性  </p>
+<h3 id="_6">“上下文相关重现”部分</h3>
+<p>在 yaml front matter 之后，有一个“上下文相关重现”部分。</p>
+<pre><code class="language-javascript">Tags:: #berlin
+~~~dataviewjs
+let tags = this.current().file.etags
+let notes = tags
+    .map(t =&gt; dv.pages(t + ' and !&quot;' + this.current().file.path + '&quot;'));
+dv.list(notes.file.link);
+~~~
+</code></pre>
+<p><code>Tags::</code> 用于定义标签。<br />
+您还可以在笔记的其他行中使用标签。在这里定义标签的好处是可以保持笔记结构整齐划一。</p>
+<p>Dataview 代码块，用于重现相关笔记。<br />
+拥有与当前笔记相同标签的所有笔记都将显示在这里，除了当前笔记本身。</p>
+<h3 id="_7">笔记标题</h3>
+<p>笔记标题和笔记文件名保持同步，需要插件 <a href="https://github.com/dvcrn/obsidian-filename-heading-sync">Filename heading sync</a>.</p>
+<h3 id="_8">正文</h3>
+<p>文献笔记的正文。</p>
+<p>例子:</p>
+<pre><code class="language-markdown">~~~ad-summary
+Berlin is the capital of Germany, has a long history and is a city of culture. 
+~~~
+
+**Berlin is the capital and largest city of Germany by both area and population**. Its 3.7 million inhabitants make it the European Union's most populous city, according to population within city limits. One of Germany's sixteen constituent states, Berlin is surrounded by the State of Brandenburg and contiguous with Potsdam, Brandenburg's capital. Berlin's urban area, which has a population of around 4.5 million, ==**is the second most populous urban area in Germany after the Ruhr.**== The Berlin-Brandenburg capital region has around 6.2 million inhabitants and is Germany's third-largest metropolitan region after the Rhine-Ruhr and Rhine-Main regions. There was an unsuccessful attempt to unify both states in 1996, and despite remaining separate, the two states cooperate on many matters to this day.
+💡 [[Ich bin ein Berliner - Kennedy]]
+💡 [[German cities are beautiful]]
+</code></pre>
+<p>在阅读模式下，以上文字将被显示为</p>
+<p><img alt="image-20220803205234600" src="../images/image-20220803205234600.png" /></p>
+<h4 id="_9">渐进式总结</h4>
+<p>建议使用 Tiago Forte 的渐进式总结来阅读文献笔记。 它是一种逐步消费信息，同时根据需要对其进行压缩的技术。 该技术包含以下步骤。</p>
+<ol>
+<li>原始记录</li>
+<li>用<code>** **</code> 加粗的段落</li>
+<li>使用<code>== ==</code> 突出显示段落</li>
+<li>使用admonition <code>~~~ad-summary</code>进行摘要</li>
+<li>再混合</li>
+</ol>
+<p>在上面的示例文本中，有两个粗体段落、一个突出显示段落和一个摘要。 为了正确显示摘要，需要插件 <a href="https://github.com/valentine195/obsidian-admonition">Admonition</a>。</p>
+<h4 id="_10">提取原子笔记和常青笔记</h4>
+<p>在渐进式总结过程中，您应该从文献笔记中提取信息：原子笔记和常青笔记。 在示例文本中，一个原子笔记和一个常青笔记被提取出来了。 （最后两行。）</p>
+<p>笔记标题前的符号<code>💡</code>用于标记提取。<br />
+在阅读被提取出的笔记时，在linked mentions 部分，您可以轻松找出它是从哪个文献笔记中提取的。  例如。 原子笔记“Ich bin ein Berliner - Kennedy”是从“Berlin (Wikipedia)”中提取的，而不是从主题笔记“Berlin”中提取的。  </p>
+<p><img alt="image-20220803214007822" src="../images/image-20220803214007822.png" /></p>
+<h2 id="_11">原子笔记</h2>
+<p><em>Atomic note</em></p>
+<h3 id="yalm-front-matter_1">Yalm front matter</h3>
+<p>原子笔记的 yaml front matter 中具有以下标准属性。</p>
+<pre><code class="language-yaml">---
+author: Kennedy 
+excerpt: a speech by United States President John F. Kennedy 
+fileClass: atomic-note  
+score: xx 
+category-atomic-note: aphorism  
+reviewed: x 
+date: 2022-07-14  
+last-review: 2022-07-14  
+---
+</code></pre>
+<p><code>author</code>：文献作者，可选<br />
+<code>excerpt</code>：笔记的摘录，可选<br />
+<code>fileClass</code>：笔记类型，总是<code>atomic-note</code>  <br />
+<code>score</code>：笔记分数，可能的值：x,...,xxxxx，<strong>间隔重复</strong>使用该属性<br />
+<code>category-atomic-note</code>：原子笔记的类别，可选<br />
+<code>reviewed</code>: 复习次数，可能的值：x,...,xxxxx，<strong>间隔重复</strong>使用该属性<br />
+<code>date</code>：笔记的创建日期，自动创建<br />
+<code>last-review</code>：最后一次回顾的日期，<strong>间隔重复</strong>使用该属性  </p>
+<h3 id="_12">标签部分</h3>
+<p>在 yaml front matter 之后，有一个标签部分 。</p>
+<pre><code class="language-javascript">Tags:: #berlin
+</code></pre>
+<p><code>Tags::</code> 用于定义标签。 <br />
+您还可以在笔记的其他行中使用标签。在这里定义标签的好处是可以保持笔记结构整齐划一。</p>
+<p>在原子笔记中，不打算重新显示其他笔记。 所以没有像文献笔记那样类似的dataview代码块。</p>
+<h3 id="_13">笔记标题</h3>
+<p>笔记标题和笔记文件名保持同步，需要插件 <a href="https://github.com/dvcrn/obsidian-filename-heading-sync">Filename heading sync</a>.</p>
+<h3 id="_14">正文</h3>
+<p>例子:</p>
+<pre><code class="language-markdown">&quot;Ich bin ein Berliner&quot; (&quot;I am a Berliner&quot;) is a speech by United States President John F. Kennedy given on June 26, 1963, in West Berlin. - [Ich bin ein Berliner - Wikipedia](https://en.wikipedia.org/wiki/Ich_bin_ein_Berliner)
+
+</code></pre>
+<h3 id="_15">反链部分</h3>
+<p>原子笔记将被其他笔记引用。 您可以在"Linked Mentions"部分中找到所有引用当前笔记的文件。</p>
+<p><img alt="image-20220803220409023" src="../images/image-20220803220409023.png" /></p>
+<h2 id="_16">常青笔记</h2>
+<p><em>Evergreen note</em></p>
+<h3 id="yalm-front-matter_2">Yalm front matter</h3>
+<p>常青笔记的 yaml front matter 中具有以下标准属性。</p>
+<pre><code class="language-yaml">---
+excerpt: German cities are beautiful  
+fileClass: evergreen-note
+score: x  
+category-evergreen-note:  
+reviewed: x  
+date: 2022-01-14  
+last-review: 2022-01-14   
+---
+</code></pre>
+<p><code>excerpt</code>：笔记的摘录，可选<br />
+<code>fileClass</code>：笔记类型，总是<code>evergreen-note</code>  <br />
+<code>score</code>：笔记分数，可能的值：x,...,xxxxx，<strong>间隔重复</strong>使用该属性<br />
+<code>category-evergreen-note</code>：常青笔记的类别，可选<br />
+<code>reviewed</code>: 复习次数，可能的值：x,...,xxxxx，<strong>间隔重复</strong>使用该属性<br />
+<code>date</code>：笔记的创建日期，自动创建<br />
+<code>last-review</code>：最后一次回顾的日期，<strong>间隔重复</strong>使用该属性  </p>
+<h3 id="_17">“上下文相关重现”部分</h3>
+<p>在 yaml front matter 之后，有一个“上下文相关重现”部分。</p>
+<pre><code class="language-javascript">Tags:: #berlin
+~~~dataviewjs
+let tags = this.current().file.etags
+let notes = tags
+    .map(t =&gt; dv.pages(t + ' and !&quot;' + this.current().file.path + '&quot;'));
+dv.list(notes.file.link);
+~~~
+</code></pre>
+<p><code>Tags::</code> 用于定义标签。<br />
+您还可以在笔记的其他行中使用标签。在这里定义标签的好处是可以保持笔记结构整齐划一。</p>
+<p>Dataview 代码块，用于重现相关笔记。 拥有与当前笔记相同标签的所有笔记都将显示在这里，除了当前笔记本身。</p>
+<h3 id="_18">笔记标题</h3>
+<p>笔记标题和笔记文件名保持同步，需要插件 <a href="https://github.com/dvcrn/obsidian-filename-heading-sync">Filename heading sync</a>.</p>
+<h3 id="_19">正文</h3>
+<p>常青笔记的正文。</p>
+<h2 id="_20">主题笔记</h2>
+<p><em>Topic note</em></p>
+<h3 id="yalm-front-matter_3">Yalm front matter</h3>
+<p>主题笔记的 yaml front matter 中具有以下标准属性。</p>
+<pre><code class="language-yaml">---
+alias: [&quot;#berlin&quot;]
+excerpt:  
+fileClass: topic  
+score: x  
+category-topic:   
+reviewed: x  
+cover: 
+date: 2022-07-14  
+last-review: 2022-07-14  
+---
+</code></pre>
+<p><code>alias</code>:笔记别名，可选<br />
+<code>excerpt</code>：笔记的摘录，可选<br />
+<code>fileClass</code>：笔记类型，总是<code>evergreen-note</code>  <br />
+<code>score</code>：笔记分数，可能的值：x,...,xxxxx，<strong>间隔重复</strong>使用该属性<br />
+<code>category-topic</code>：主题笔记的类别，可选<br />
+<code>reviewed</code>: 复习次数，可能的值：x,...,xxxxx，<strong>间隔重复</strong>使用该属性<br />
+<code>date</code>：笔记的创建日期，自动创建<br />
+<code>last-review</code>：最后一次回顾的日期，<strong>间隔重复</strong>使用该属性  </p>
+<h3 id="_21">“整合助手”部分</h3>
+<p>在yaml front matter 之后，有一个“合并助手”的部分。</p>
+<pre><code class="language-javascript">Value-Goal::  
+Related-Tag:: #berlin 
+
+**Not Processed Notes**
+~~~dataviewjs
+let currentPage = this.current()
+let tagRel = currentPage[&quot;Related-Tag&quot;]
+let notes = dv.pages(tagRel 
+            + ' and !&quot;' + this.current().file.path + '&quot;' )
+            .where(p =&gt; !p.file.inlinks.includes(currentPage.file.link) &amp; p.file.etags.includes(tagRel));
+if (tagRel != &quot;#dummytopic&quot;) {
+    dv.list(notes.file.link);
+}
+~~~
+</code></pre>
+<p><code>Value-Goal::</code> 于本主题相关的价值目标 <br />
+<code>Tags::</code> 用于定义将在本主题中整合的标签  </p>
+<p>用于支持整合的dataview代码。<br />
+所有拥有相关标签的笔记都会显示在<strong>Not Processed Notes</strong>下方。但这些笔记被引用在本主题中之后(使用链接)，它们就不再显示在<strong>Not Processed Notes</strong>之下了。</p>
+<p>整合之前,有一个笔记没有被整合： <code>Berlin (Wikipedia)</code>。<br />
+<img alt="image-20220816214110876" src="../images/image-20220816214110876.png" /></p>
+<p>整合之后， <code>Berlin (Wikipedia)</code> 不再显示。</p>
+<p><img alt="image-20220816214202530" src="../images/image-20220816214202530.png" /></p>
+<h3 id="_22">笔记标题</h3>
+<p>笔记标题和笔记文件名保持同步，需要插件 <a href="https://github.com/dvcrn/obsidian-filename-heading-sync">Filename heading sync</a>.</p>
+<h3 id="_23">正文</h3>
+<p>主题笔记的正文。使用链接来整合其他笔记。</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
