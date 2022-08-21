@@ -1,4 +1,7 @@
-.idea/
-.obsidian/workspace*
-.obsidian/workspace
-site/
+.idea/*
+.obsidian/*
+docs/site/*
+.trash/*
+.obsidian/app.json
+.trash/quick_start.md
+
